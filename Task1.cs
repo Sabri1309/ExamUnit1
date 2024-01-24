@@ -1,20 +1,3 @@
-Move();
-Move();
-Move();
-Turn();
-Move();
-Move();
-Turn();
-Turn();
-Turn();
-Move();
-*/
-
-
-#region Basic functions
-// These functions are just her to make your intelisense work. 
-// They only have a conceptual function.
-
 if (peek=true){
 move ();
 }
@@ -24,14 +7,19 @@ else
 };
 
 
+
+#region Basic functions
+// These functions are just her to make your intelisense work. 
+// They only have a conceptual function.
+
 void Move()
 {
-    // Moves the car 1 cell in the direction it is heading. 
+    Console.Writeline (The Car Has Moved); 
 }
 
 void Turn()
 {
-    // Turns the car 90 deg clockwise.
+    (The Car Has Turned 90 degrees Clockwise);
 }
 
 bool Peek()
