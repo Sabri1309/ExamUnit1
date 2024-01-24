@@ -1,6 +1,3 @@
-// Your program should start at this line.
-/*
-Example:
 Move();
 Move();
 Move();
@@ -17,6 +14,15 @@ Move();
 #region Basic functions
 // These functions are just her to make your intelisense work. 
 // They only have a conceptual function.
+
+if (peek=true){
+move ();
+}
+else 
+{
+    turn ();
+};
+
 
 void Move()
 {
