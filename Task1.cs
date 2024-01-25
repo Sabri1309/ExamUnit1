@@ -1,12 +1,21 @@
+for(bool AtGoal=false){
 if (peek=true){
 move ();
 }
-else 
+elseif(bool VisitedCells=true ) 
 {
     turn ();
-};
+}
+else(){
+    turn();
+}
+}
 
-
+if (bool AtGoal=true){
+    End Game (){
+    Console.Writeline ("Game Over, You have reached the end...");
+}
+}
 
 #region Basic functions
 // These functions are just her to make your intelisense work. 
@@ -14,12 +23,12 @@ else
 
 void Move()
 {
-    Console.Writeline (The Car Has Moved); 
+    Console.Writeline ("The Car Has Moved"); 
 }
 
 void Turn()
 {
-    (The Car Has Turned 90 degrees Clockwise);
+    ("The Car Has Turned 90 degrees Clockwise");
 }
 
 bool Peek()
@@ -32,6 +41,12 @@ bool AtGoal()
 {
     // Returns true if the current cell is the goal cell.
     return true; // just a placholder
+}
+bool VisitedCells()
+{
+//keeps track of visited cells, bool is true if the cell is visited.
+return true;
+
 }
 
 #endregion
