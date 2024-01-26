@@ -17,18 +17,25 @@ if (bool AtGoal=true){
 }
 }
 
+
+bool VisitedCells()
+{
+//keeps track of visited cells, bool is true if the cell is visited.
+return true;
+
+}
 #region Basic functions
 // These functions are just her to make your intelisense work. 
 // They only have a conceptual function.
 
 void Move()
 {
-    Console.Writeline ("The Car Has Moved"); 
+    // Moves the car 1 cell in the direction it is heading. 
 }
 
 void Turn()
 {
-    ("The Car Has Turned 90 degrees Clockwise");
+    // Turns the car 90 deg clockwise.
 }
 
 bool Peek()
@@ -41,12 +48,6 @@ bool AtGoal()
 {
     // Returns true if the current cell is the goal cell.
     return true; // just a placholder
-}
-bool VisitedCells()
-{
-//keeps track of visited cells, bool is true if the cell is visited.
-return true;
-
 }
 
 #endregion
