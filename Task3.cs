@@ -1,20 +1,25 @@
-for(bool AtGoal=false){
-if (peek=true){
-move ();
-}
-elseif(bool VisitedCells=true ) 
+bool AtGoal = false;
+
+while (!AtGoal)
 {
-    turn ();
-}
-else(){
-    turn();
-}
+    if (Peek())
+    {
+        Move();
+    }
+    else if (VisitedCells())
+    {
+        Turn();
+    }
+    else
+    {
+        Turn();
+    }
 }
 
-if (bool AtGoal=true){
-    End Game (){
-    Console.Writeline ("Game Over, You have reached the end...");
-}
+if (AtGoal)
+{
+    EndGame();
+    Console.WriteLine("Game Over, You have reached the end...");
 }
 
 
