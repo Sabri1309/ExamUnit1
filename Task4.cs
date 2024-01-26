@@ -1,29 +1,57 @@
-for(bool AtGoal=false){
-if (peek=true){
-move ();
-}
-elseif(bool VisitedCells=true ) 
+class Program
 {
-    turn ();
-}
-else(){
-    turn();
-}
+    static bool AtGoal = false;
+
+    static void Main()
+    {
+        //  grid of this task is 42x32
+        int rows = 42;
+        int cols = 32;
+
+        bool[,] visitedCells = new bool[rows, cols];
+
+        while (!AtGoal)
+        {
+            if (Peek())
+            {
+                Move();
+            }
+            else if (VisitedCells(visitedCells))
+            {
+                Turn();
+            }
+            else
+            {
+                Turn();
+            }
+        }
+
+        if (AtGoal)
+        {
+            EndGame();
+            Console.WriteLine("Game Over, You have reached the end...");
+        }
+    }
+
+
+    static bool VisitedCells(bool[,] visitedCells)
+    {
+        int currentRow = GetCurrentRow();
+        int currentCol = GetCurrentCol();
+
+        if (!visitedCells[currentRow, currentCol])
+        {
+            visitedCells[currentRow, currentCol] = true;
+            return false; // Cell not visited before
+        }
+        else
+        {
+            return true; // Cell already visited
+        }
+    }
+
 }
 
-if (bool AtGoal=true){
-    End Game (){
-    Console.Writeline ("Game Over, You have reached the end...");
-}
-}
-
-
-bool VisitedCells()
-{
-//keeps track of visited cells, bool is true if the cell is visited.
-return true;
-
-}
 #region Basic functions
 // These functions are just her to make your intelisense work. 
 // They only have a conceptual function.
